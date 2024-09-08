@@ -5,6 +5,9 @@
     width: 95%;
     justify-content: space-evenly;
 }
+.gap{
+    margin-top: 20px;
+}
 
 
 @media screen and (max-width: 1200px) {

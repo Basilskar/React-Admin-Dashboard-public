@@ -2,7 +2,6 @@
 import {
   UilEstate,
   UilClipboardAlt,
-  UilUsersAlt,
   UilPackage,
   UilChart,
   UilSignOutAlt,
@@ -12,106 +11,101 @@ import {
 import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
 import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
-// Recent Card Imports
-import img1 from "../imgs/img1.png";
-import img2 from "../imgs/img2.png";
-import img3 from "../imgs/img3.png";
+
 
 // Sidebar Data
 export const SidebarData = [
   {
-    icon: UilEstate,
+     icon: UilEstate,
     heading: "Dashboard",
   },
   {
     icon: UilClipboardAlt,
-    heading: "Orders",
-  },
-  {
-    icon: UilUsersAlt,
-    heading: "Customers",
+    heading: "Commodities",
   },
   {
     icon: UilPackage,
-    heading: 'Products'
+    heading: 'News',
   },
   {
     icon: UilChart,
-    heading: 'Analytics'
+    heading: 'Analytics',
   },
 ];
 
 // Analytics Cards Data
 export const cardsData = [
   {
-    title: "Sales",
+    title: "Wheat",
     color: {
       backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
-    barValue: 70,
-    value: "25,970",
+    barValue: 78, // Representing a slight rise in price due to supply issues
+    value: "₹32/kg",  // Updated realistic value for wheat
+    change: "+2% this week",  // Wheat price has risen by 2% this week
     png: UilUsdSquare,
     series: [
       {
-        name: "Sales",
-        data: [31, 40, 28, 51, 42, 109, 100],
+        name: "Wheat",
+        data: [30, 31, 29, 32, 34, 32, 33], // Weekly data with small changes
       },
     ],
   },
   {
-    title: "Revenue",
+    title: "Rice",
     color: {
       backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
       boxShadow: "0px 10px 20px 0px #FDC0C7",
     },
-    barValue: 80,
-    value: "14,270",
+    barValue: 84, // Stable demand but slight fluctuations
+    value: "₹38/kg",  // Updated realistic value for rice
+    change: "-1% this week",  // Rice price has dropped by 1%
     png: UilMoneyWithdrawal,
     series: [
       {
-        name: "Revenue",
-        data: [10, 100, 50, 70, 80, 30, 40],
+        name: "Rice",
+        data: [40, 39, 38, 37, 38, 39, 38], // Weekly data with slight variation
       },
     ],
   },
   {
-    title: "Expenses",
+    title: "Corn",
     color: {
       backGround:
         "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
       boxShadow: "0px 10px 20px 0px #F9D59B",
     },
-    barValue: 60,
-    value: "4,270",
+    barValue: 69, // Corn has seen a moderate rise due to seasonal demand
+    value: "₹26/kg",  // Updated realistic value for corn
+    change: "+3% this week",  // Corn price has increased by 3%
     png: UilClipboardAlt,
     series: [
       {
-        name: "Expenses",
-        data: [10, 25, 15, 30, 12, 15, 20],
+        name: "Corn",
+        data: [24, 25, 24, 26, 26, 27, 26], // Weekly data with moderate increase
       },
     ],
   },
 ];
 
+
 // Recent Update Card Data
 export const UpdatesData = [
   {
-    img: img1,
-    name: "Andrew Thomas",
-    noti: "has ordered Apple smart watch 2500mh battery.",
-    time: "25 seconds ago",
+    "name": "Yield Boost",
+    "noti": "New study reveals that the latest crop varieties can increase yield by 20%.",
+    "time": "1 day ago"
   },
   {
-    img: img2,
-    name: "James Bond",
-    noti: "has received Samsung gadget for charging battery.",
-    time: "30 minutes ago",
+    "name": "Subsidies Announced",
+    "noti": "Government announces new subsidies to support sustainable farming practices.",
+    "time": "2 days ago"
   },
   {
-    img: img3,
-    name: "Iron Man",
-    noti: "has ordered Apple smart watch, samsung Gear 2500mh battery.",
-    time: "2 hours ago",
-  },
+    "name": "Monsoon Outlook",
+    "noti": "Experts forecast a favorable monsoon season, which is expected to boost crop growth.",
+    "time": "1 day ago"
+  }
+ 
 ];

@@ -6,12 +6,12 @@ import "./RightSide.css";
 const RightSide = () => {
   return (
     <div className="RightSide">
-      <div>
-        <h3>Updates</h3>
+      <div className="gap">
+        <h2>Latest News</h2>
         <Updates />
       </div>
-      <div>
-        <h3>Customer Review</h3>
+      <div className="size"> 
+        <h2>Market Analysis</h2>
         <CustomerReview />
       </div>
     </div>

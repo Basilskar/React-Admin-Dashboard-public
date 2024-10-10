@@ -5,20 +5,20 @@ const CustomerReview = () => {
   const data = {
     series: [
       {
-        name: "Milk",
-        data: [50, 52, 53, 54, 55, 56, 58],  // Milk price (₹/liter) over 7 months
+        name: "Soybean",
+        data: [4000, 4200, 4400, 4600, 4500, 4700, 4900],  // Soybean price (₹/quintal) over 7 months
       },
       {
         name: "Rice",
-        data: [35, 34, 36, 38, 39, 37, 40],  // Rice price (₹/kg) over 7 months
+        data: [3500, 3400, 3600, 3800, 3900, 3700, 4000],  // Rice price (₹/quintal) over 7 months
       },
       {
         name: "Wheat",
-        data: [22, 23, 21, 25, 24, 26, 28],  // Wheat price (₹/kg) over 7 months
+        data: [2200, 2300, 2100, 2500, 2400, 2600, 2800],  // Wheat price (₹/quintal) over 7 months
       },
       {
         name: "Corn",
-        data: [18, 19, 18.5, 20, 21, 19.5, 22],  // Corn price (₹/kg) over 7 months
+        data: [1800, 1900, 1850, 2000, 2100, 1950, 2200],  // Corn price (₹/quintal) over 7 months
       },
     ],
     options: {
@@ -35,7 +35,7 @@ const CustomerReview = () => {
       },
       stroke: {
         curve: "smooth",
-        colors: ["#ff0000", "#ffd700", "#00ff00", "#0000ff"],  // Consistent colors for Milk (red), Rice (gold), Wheat (green), Corn (blue)
+        colors: ["#ff0000", "#ffd700", "#00ff00", "#0000ff"],  // Consistent colors for Soybean (red), Rice (gold), Wheat (green), Corn (blue)
       },
       tooltip: {
         enabled: true,
@@ -64,14 +64,23 @@ const CustomerReview = () => {
       yaxis: {
         show: true,  // Show the y-axis to indicate commodity prices
         title: {
-          text: "Price (in ₹)",
+          text: "Price (in ₹/quintal)",
         },
       },
       toolbar: {
         show: false,
       },
       legend: {
-        show: false,  // Hide the legend
+        show: true,  // Show the legend
+        position: "top",  // Position legend at the top
+        markers: {
+          width: 0,  // Hide marker swatches (no colors in the legend)
+        },
+        labels: {
+          useSeriesColors: false,
+        },
+        fontSize: "14px",  // Adjust font size
+        fontWeight: 700,  // Make the legend bold
       },
     },
   };

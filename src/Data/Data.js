@@ -42,13 +42,13 @@ export const cardsData = [
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 78, // Representing a slight rise in price due to supply issues
-    value: "₹32/kg",  // Updated realistic value for wheat
+    value: "₹2900/quintal",  // Updated realistic value for wheat per quintal
     change: "+2% this week",  // Wheat price has risen by 2% this week
     png: UilUsdSquare,
     series: [
       {
         name: "Wheat",
-        data: [30, 31, 29, 32, 34, 32, 33], // Weekly data with small changes
+        data: [3000, 3100, 2900, 3200, 3400, 3200, 3300], // Weekly data with small changes in ₹/quintal
       },
     ],
   },
@@ -59,13 +59,13 @@ export const cardsData = [
       boxShadow: "0px 10px 20px 0px #FDC0C7",
     },
     barValue: 84, // Stable demand but slight fluctuations
-    value: "₹38/kg",  // Updated realistic value for rice
+    value: "₹3200/quintal",  // Updated realistic value for rice per quintal
     change: "-1% this week",  // Rice price has dropped by 1%
     png: UilMoneyWithdrawal,
     series: [
       {
         name: "Rice",
-        data: [40, 39, 38, 37, 38, 39, 38], // Weekly data with slight variation
+        data: [4000, 3900, 3800, 3700, 3800, 3900, 3800], // Weekly data with slight variation in ₹/quintal
       },
     ],
   },
@@ -77,13 +77,13 @@ export const cardsData = [
       boxShadow: "0px 10px 20px 0px #F9D59B",
     },
     barValue: 69, // Corn has seen a moderate rise due to seasonal demand
-    value: "₹26/kg",  // Updated realistic value for corn
+    value: "₹2200/quintal",  // Updated realistic value for corn per quintal
     change: "+3% this week",  // Corn price has increased by 3%
     png: UilClipboardAlt,
     series: [
       {
         name: "Corn",
-        data: [24, 25, 24, 26, 26, 27, 26], // Weekly data with moderate increase
+        data: [2400, 2500, 2400, 2600, 2600, 2700, 2600], // Weekly data with moderate increase in ₹/quintal
       },
     ],
   },
